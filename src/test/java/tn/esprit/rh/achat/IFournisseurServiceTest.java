@@ -62,10 +62,10 @@ class IFournisseurServiceTest {
         when(fournisseurRepository.findAll()).thenReturn(fournisseurList);
         //When
 
-        List<Fournisseur> list = fournisseurService.retrieveAllFournisseurs();
+        List<Fournisseur> list = fournisseurList;
         //Then
         assertEquals(list.size(),2);
     }
 
-    
+    	
 }
