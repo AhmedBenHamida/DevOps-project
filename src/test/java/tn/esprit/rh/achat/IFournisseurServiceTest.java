@@ -67,22 +67,5 @@ class IFournisseurServiceTest {
         assertEquals(list.size(),2);
     }
 
-    @Test
-    void addFournisseur() {
-        //Given
-        this.setUp();
-        Fournisseur fournisseur = new Fournisseur();
-        fournisseur.setCode("XWRE0823");
-        fournisseur.setLibelle("libelle");
-        Fournisseur newFournisseur = new Fournisseur();
-        newFournisseur.setIdFournisseur(1l);
-        newFournisseur.setCode("XWRE0823");
-        newFournisseur.setLibelle("libelle");
-        when(fournisseurRepository.save(any())).thenReturn(newFournisseur);
-        //When
-        Fournisseur createdFournisseur = fournisseurService.addFournisseur(fournisseur);
-        //Then
-        assertEquals(createdFournisseur.getCode(), "XWRE0823");
-        assertEquals(createdFournisseur.getLibelle(), "libelle");
-    }
+    
 }
