@@ -12,7 +12,7 @@ services:
       - db:/var/lib/mysql
  app:
    container_name: spring
-   image: doniakacem/devopsimagedocker
+   image: validcards20/devops
    depends_on:
      - mysqldb
    build: .
