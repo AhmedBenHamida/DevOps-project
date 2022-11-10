@@ -69,7 +69,7 @@
 
 <id>deploymentRepo</id>
 <name>Nexus Repository</name>
-<url>http://192.168.1.4:8081/repository/maven-nexus-repo</url>
+<url>http://192.168.1.16:8081/repository/maven-nexus-repo</url>
 </repository>
 </distributionManagement>
 
